@@ -1,21 +1,44 @@
 .nav-container {
-    background-color: #fff;
-    border-bottom: 1px solid #e7e7e7;
-    /* box-shadow: 0 1px 0 0 #e7e7e7; */
-    height: 100px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
+  background-color: #fff;
+  border-bottom: 1px solid #e7e7e7;
+  /* box-shadow: 0 1px 0 0 #e7e7e7; */
+  height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .nav-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    margin: 0 auto;
-    max-width: 1200px;
-    padding: 0 20px;
-    width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+  width: 100%;
+  font-size: 1.2rem;
+  color: black;
+}
+.nav-items > * {
+  margin-right: 1rem;
+}
+.nav-icons {
+  transform: scale(0.7);
+}
+#search-icon-nav {
+  padding-left: 200px;
+}
+#signup-nav {
+  width: max-content;
+  margin-left: -10%;
+  font-size: 1.2rem;
+}
+#login-nav {
+  font-size: 1.2rem;
+}
+
+#ants-logo {
+  transform: scale(0.8);
 }
