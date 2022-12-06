@@ -15,7 +15,28 @@ const Home = () => {
     <div className="home-container">
       <Navbar />
       <div className="home-content">
-        <Container>
+        <div className="home-header">
+          <div className="home-img">
+            <img
+              src="https://previews.123rf.com/images/andreycherkasov/andreycherkasov1703/andreycherkasov170300160/73956693-box-with-beads-plier-and-glass-hearts-to-create-hand-made-jewelry-on-old-wooden-background-handmade-.jpg"
+              alt="home-img"
+              width="100%"
+              height="500px"
+            />
+
+            <div className="home-text">
+              <p>Welcome</p>
+              <p>to Ants!</p>
+            </div>
+          </div>
+        </div>
+        <div className="home-collection">
+          <div className="collection-header">
+              <h1>Our Collections</h1>
+              <hr />
+          </div>
+        </div>
+        {/* <Container>
           <Row>
             <Col>
               <div className="home-text">
@@ -51,7 +72,7 @@ const Home = () => {
               
             </Col>
           </Row>
-        </Container>
+        </Container> */}
       </div>
       {/* <Footer />  */}
     </div>
