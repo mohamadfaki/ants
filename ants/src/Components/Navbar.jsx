@@ -19,20 +19,20 @@ const NavBar = () => {
       className="nav-container"
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand href="/">
           <img src={Logo} alt="Logo" id="ants-logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto nav-items">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">Our Shop</Nav.Link>
-            <Nav.Link href="#pricing">Contact Us</Nav.Link>
-            <Nav.Link href="#pricing">Discover More</Nav.Link>
-            <Nav.Link href="#pricing">
+            <Nav.Link className="nav-link" href="/">Home</Nav.Link>
+            <Nav.Link className="nav-link" href="/shop">Our Shop</Nav.Link>
+            <Nav.Link className="nav-link" href="/contact-us">Contact Us</Nav.Link>
+            <Nav.Link className="nav-link" href="/discover-more">Discover More</Nav.Link>
+            <Nav.Link href="#">
               <img src={SearchIcon} alt="Search" className="nav-icons" />
             </Nav.Link>
-            <Nav.Link href="#pricing">
+            <Nav.Link href="/cart">
               <img src={CartIcon} alt="Cart" className="nav-icons" />
             </Nav.Link>
 
@@ -49,10 +49,10 @@ const NavBar = () => {
             </NavDropdown> */}
           </Nav>
           <Nav>
-            <Nav.Link href="#deets" id="login-nav">
+            <Nav.Link className="nav-link" href="/sign-in" id="login-nav">
               Login
             </Nav.Link>
-            <Nav.Link eventKey={2} href="#memes" id="signup-nav">
+            <Nav.Link className="nav-link" eventKey={2} href="/sign-up" id="signup-nav">
               /Sign Up
             </Nav.Link>
           </Nav>
