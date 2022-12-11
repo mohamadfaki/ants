@@ -5,6 +5,7 @@ import Navbar from "../Components/Navbar";
 import "../Styles/Home.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import HomeImage from "../Assets/home-img.png";
 // import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 // import { MdEmail } from 'react-icons/md';
 // import { FiPhoneCall } from 'react-icons/fi';
@@ -17,13 +18,8 @@ const Home = () => {
       <div className="home-content">
         <div className="home-header">
           <div className="home-img">
-            <img
-              src="https://previews.123rf.com/images/andreycherkasov/andreycherkasov1703/andreycherkasov170300160/73956693-box-with-beads-plier-and-glass-hearts-to-create-hand-made-jewelry-on-old-wooden-background-handmade-.jpg"
-              alt="home-img"
-              width="100%"
-              height="500px"
-            />
-
+            <img src={HomeImage} alt="home-img" width="100%" height="500px" />
+            <div id="home-image-filter"></div>
             <div className="home-text">
               <p>Welcome</p>
               <p>to Ants!</p>
@@ -32,8 +28,7 @@ const Home = () => {
         </div>
         <div className="home-collection">
           <div className="collection-header">
-              <h1>Our Collections</h1>
-              <hr />
+            <h1 id="our-collection-title">Our Collections</h1>
           </div>
         </div>
         {/* <Container>

@@ -1,22 +1,38 @@
 .home-text {
-    position: absolute;
-    top: 40%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    /* text-align: center; */
-    color: white;
-    font-size: 6rem;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-}   
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  /* text-align: center; */
+  color: white;
+  font-size: 6rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
 
 .collection-header {
-    position: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  position: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .collection-header hr {
-    width: 100%;
-    border: 2px solid #000;
+  width: 100%;
+  border: 2px solid #000;
+}
+#home-image-filter {
+  z-index: 1000;
+  background-color: rgba(141, 99, 170, 0.3);
+  position: absolute;
+  top: 40%;
+  left: 30%;
+}
+#our-collection-title::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  /* margin-top: 50%;
+  margin-bottom: 50%; */
 }
