@@ -1,0 +1,38 @@
+.contact-text {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    margin-left: 10%;
+    margin-top: 1%;
+  }
+
+.contact-line {
+    position: absolute;
+    top: 26%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 2px;
+    background-color: #000;
+  }
+  
+ 
+  .container-1{
+    width:50%;
+    background-color: rgb(255, 255, 255);
+    position:relative;
+  float: ;
+    margin: 0;
+    padding: 0;
+
+   
+  }
+  .contact-img{
+    margin-top: 20%;
+  }
+  .btn-contact{
+    width: 150px;
+    height: 50px;
+    background: #69358D !important;
+    border: 0px;
+  }
