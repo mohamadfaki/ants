@@ -3,6 +3,7 @@ import "../Styles/Home.css";
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import HomeImage from "../Assets/home-img.png";
+import homeOpa from "../Assets/home-opacity.png";
 import crystals from "../Assets/crystals.png";
 import clothing from "../Assets/clothing.png";
 import jewelry from "../Assets/jewelry.png";
@@ -13,6 +14,7 @@ import aquarius from "../Assets/aquarius.png";
 import black from "../Assets/black.png";
 import heal from "../Assets/heal.png";
 import story from "../Assets/story.png";
+import imgHeader from "../Assets/img-header.png";
 
 // import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 // import { MdEmail } from 'react-icons/md';
@@ -27,11 +29,26 @@ const Home = () => {
           <div className="home-img">
             <img src={HomeImage} alt="home-img" width="100%" height="500px" />
             <div id="home-image-filter"></div>
-            <div className="home-text">
-              <p>Welcome</p>
-              <p>to Ants!</p>
+            <div className="header-content">
+              <div className="header-text">
+                <div className="home-text">
+                  <p className="text-top">Welcome</p>
+                  <p className="text-bottom">to Ants!</p>
+                </div>
+              </div>
+              <div className="header-img">
+                <img
+                  src={imgHeader}
+                  alt="img-header"
+                  width="470px"
+                  height="280px"
+                />
+              </div>
             </div>
           </div>
+          {/* <div className="home-opa">
+            <img src={homeOpa} alt="home-opa" width="100%" height="500px" />
+          </div> */}
         </div>
         <div className="home-collection">
           <div className="collection-header">
@@ -42,32 +59,43 @@ const Home = () => {
           </div>
           <div className="collection-content">
             <div className="collection-item">
-              <div className="collection-item-img">
-                <img
-                  src={crystals}
-                  alt="crystals"
-                  width="300px"
-                  height="350px"
-                />
-              </div>
-              <p className="collection-item-text">Necklaces</p>
+              <Link style={{ textDecoration: "none" }} to="/shop/crystals">
+                <div className="collection-item-img">
+                  <img
+                    src={crystals}
+                    alt="crystals"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Crystals</p>
+              </Link>
             </div>
             <div className="collection-item1">
-              <div className="collection-item-img">
-                <img
-                  src={clothing}
-                  alt="clothing"
-                  width="300px"
-                  height="350px"
-                />
-              </div>
-              <p className="collection-item-text">Clothing</p>
+              <Link style={{ textDecoration: "none" }} to="/shop/clothing">
+                <div className="collection-item-img">
+                  <img
+                    src={clothing}
+                    alt="clothing"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Clothing</p>
+              </Link>
             </div>
             <div className="collection-item">
-              <div className="collection-item-img">
-                <img src={jewelry} alt="jewelry" width="300px" height="350px" />
-              </div>
-              <p className="collection-item-text">Jewelry</p>
+              <Link style={{ textDecoration: "none" }} to="/shop/jewelry">
+                <div className="collection-item-img">
+                  <img
+                    src={jewelry}
+                    alt="jewelry"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Jewelry</p>
+              </Link>
             </div>
           </div>
         </div>

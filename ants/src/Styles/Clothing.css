@@ -1,0 +1,9 @@
+.clothing-line {
+  top: 32.5%;
+  position: absolute;
+  left: 57%;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  height: 2px;
+  background-color: #000;
+}
