@@ -21,7 +21,21 @@ import imgHeader from "../Assets/img-header.png";
 // import { FiPhoneCall } from 'react-icons/fi';
 // import { AiFillHome } from 'react-icons/ai';
 
+// const colors = ["red", "orange", "yellow", "green", "violet", "indigo", "blue"];
+
+const chakras = [
+  { name: "Crown Chakra", color: "#E261B7" },
+  { name: "Third Eye", color: "#0085CD" },
+  { name: "Throat Chakra", color: "#5BD1DD" },
+  { name: "Heart Chakra", color: "#97C64E" },
+  { name: "Solar Plexus", color: "#F4EE7F" },
+  { name: "Sacral Eye", color: "#F4A634" },
+  { name: "Root Chakra", color: "#F76F8C" },
+];
+
 const Home = () => {
+  // const [hoveredColor, setHoveredColor] = React.useState(null);
+  const [hoveredChakra, setHoveredChakra] = React.useState(null);
   return (
     <div className="home-container">
       <div className="home-content">
@@ -191,7 +205,65 @@ const Home = () => {
           <div className="heal-section-content">
             <div className="heal-section-item">
               <div className="heal-section-item-img">
-                <img src={heal} alt="root" width="430px" height="430px" />
+                {/* <img src={heal} alt="root" width="430px" height="430px" /> */}
+                <div>
+                  <img
+                    src={heal}
+                    alt="ChakraImage"
+                    width="430px"
+                    height="430px"
+                  />
+                  <div className="heal-effect">
+                  {chakras.map((chakra, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        position: "absolute",
+                        top: 67 * index,
+                        left: "50%",
+                        transform: "translateX(-50%)",
+                        width: "36px",
+                        height: "36px",
+                        backgroundColor: chakra.color,
+                        borderRadius: "50%",
+                      }}
+                      onMouseEnter={() => setHoveredChakra(chakra)}
+                      onMouseLeave={() => setHoveredChakra(null)}
+                    />
+                  ))}
+                  {hoveredChakra && (
+                    <p style={{ color: hoveredChakra.color }}>
+                      Hovered chakra: {hoveredChakra.name}
+                    </p>
+                  )}
+                </div>
+                </div>
+                {/* <div>
+                  <img src={heal} alt="heal" width="430px" height="430px"/>
+                  {colors.map((color, index) => (
+                    <div
+                      key={index}
+                      style={{
+                        position: "absolute",
+                        top: "310%",
+                        left: "50%",
+                        transform: "translate(-50%, -50%)",
+                        width: 40,
+                        height: 40,
+                        marginTop: 10,
+                        backgroundColor: color,
+                        borderRadius: "50%",
+                      }}
+                      onMouseEnter={() => setHoveredColor(color)}
+                      onMouseLeave={() => setHoveredColor(null)}
+                    />
+                  ))}
+                  {hoveredColor && (
+                    <p style={{ color: hoveredColor }}>
+                      Hovered color: {hoveredColor}
+                    </p>
+                  )}
+                </div> */}
               </div>
             </div>
           </div>
@@ -224,45 +296,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-        {/* <Container>
-          <Row>
-            <Col>
-              <div className="home-text">
-                <h1>Ants</h1>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                  luctus luctus. Sed vitae nisl vitae nisl luctus luctus. Sed
-                  vitae nisl vitae nisl luctus luctus. Sed vitae nisl vitae nisl
-                </p>
-                <Link to="/shop" className="home-btn">
-                  Shop Now
-                </Link>
-              </div>
-            </Col>
-            <Col>
-              
-            </Col>
-          </Row>
-        </Container> */}
       </div>
-      {/* <Footer />  */}
     </div>
   );
 };
