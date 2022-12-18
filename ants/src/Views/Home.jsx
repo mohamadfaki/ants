@@ -4,9 +4,9 @@ import { Container, Row, Col } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import HomeImage from "../Assets/home-img.png";
 import homeOpa from "../Assets/home-opacity.png";
-import crystals from "../Assets/crystals.png";
-import clothing from "../Assets/clothing.png";
-import jewelry from "../Assets/jewelry.png";
+import crystals from "../Assets/crystal-img.png";
+import clothing from "../Assets/clothing-img.png";
+import jewelry from "../Assets/jewelery-img.png";
 import pisces from "../Assets/pisces.png";
 import saggitarius from "../Assets/saggitarius.png";
 import scorpio from "../Assets/scorpio.png";
@@ -15,7 +15,12 @@ import black from "../Assets/black.png";
 import heal from "../Assets/heal.png";
 import story from "../Assets/story.png";
 import imgHeader from "../Assets/img-header.png";
-
+import homewhite from "../Assets/home-white.png";
+import homeRuby from "../Assets/home-ruby.png";
+import homeSnake from "../Assets/home-snake.png";
+import homeStone from "../Assets/home-stone.png";
+import decor from "../Assets/decor-img.png";
+import incense from "../Assets/incense.png";
 // import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from 'react-icons/fa';
 // import { MdEmail } from 'react-icons/md';
 // import { FiPhoneCall } from 'react-icons/fi';
@@ -71,7 +76,20 @@ const Home = () => {
               <div className="collection-line"></div>
             </div>
           </div>
-          <div className="collection-content">
+          <div className="collection-content bar">
+            <div className="collection-item">
+              <Link style={{ textDecoration: "none" }} to="/shop/crystals">
+                <div className="collection-item-img">
+                  <img
+                    src={crystals}
+                    alt="crystals"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>  
+                <p className="collection-item-text">Crystals</p>
+              </Link>
+            </div>
             <div className="collection-item">
               <Link style={{ textDecoration: "none" }} to="/shop/crystals">
                 <div className="collection-item-img">
@@ -85,7 +103,20 @@ const Home = () => {
                 <p className="collection-item-text">Crystals</p>
               </Link>
             </div>
-            <div className="collection-item1">
+            <div className="collection-item">
+              <Link style={{ textDecoration: "none" }} to="/shop/crystals">
+                <div className="collection-item-img">
+                  <img
+                    src={crystals}
+                    alt="crystals"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Crystals</p>
+              </Link>
+            </div>
+            <div className="collection-item">
               <Link style={{ textDecoration: "none" }} to="/shop/clothing">
                 <div className="collection-item-img">
                   <img
@@ -109,6 +140,32 @@ const Home = () => {
                   />
                 </div>
                 <p className="collection-item-text">Jewelry</p>
+              </Link>
+            </div>
+            <div className="collection-item">
+              <Link style={{ textDecoration: "none" }} to="/shop/decor">
+                <div className="collection-item-img">
+                  <img
+                    src={decor}
+                    alt="jewelry"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Decor</p>
+              </Link>
+            </div>
+            <div className="collection-item">
+              <Link style={{ textDecoration: "none" }} to="/shop/incense">
+                <div className="collection-item-img">
+                  <img
+                    src={incense}
+                    alt="jewelry"
+                    width="300px"
+                    height="350px"
+                  />
+                </div>
+                <p className="collection-item-text">Incense</p>
               </Link>
             </div>
           </div>
@@ -167,30 +224,30 @@ const Home = () => {
           <div className="best-seller-content">
             <div className="best-seller-item">
               <div className="best-seller-item-img">
-                <img src={black} alt="black" width="250px" height="250px" />
+                <img src={homeStone} alt="black" width="250px" height="250px" />
               </div>
-              <p className="best-seller-item-text">Item Name</p>
+              <p className="best-seller-item-text">Stone Ring</p>
               <p className="best-seller-item-price">0.00$</p>
             </div>
             <div className="best-seller-item">
               <div className="best-seller-item-img">
-                <img src={black} alt="black" width="250px" height="250px" />
+                <img src={homeRuby} alt="black" width="250px" height="250px" />
               </div>
-              <p className="best-seller-item-text">Item Name</p>
+              <p className="best-seller-item-text">Ruby</p>
               <p className="best-seller-item-price">0.00$</p>
             </div>
             <div className="best-seller-item">
               <div className="best-seller-item-img">
-                <img src={black} alt="black" width="250px" height="250px" />
+                <img src={homewhite} alt="black" width="250px" height="250px" />
               </div>
-              <p className="best-seller-item-text">Item Name</p>
+              <p className="best-seller-item-text">White-Beije Pants</p>
               <p className="best-seller-item-price">0.00$</p>
             </div>
             <div className="best-seller-item">
               <div className="best-seller-item-img">
-                <img src={black} alt="black" width="250px" height="250px" />
+                <img src={homeSnake} alt="black" width="250px" height="250px" />
               </div>
-              <p className="best-seller-item-text">Item Name</p>
+              <p className="best-seller-item-text">Snake Earings</p>
               <p className="best-seller-item-price">0.00$</p>
             </div>
           </div>

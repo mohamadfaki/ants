@@ -2,9 +2,11 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "../Styles/Shop.css";
-import crystals from "../Assets/crystals.png";
-import clothing from "../Assets/clothing.png";
-import jewelry from "../Assets/jewelry.png";
+import crystals from "../Assets/crystal-img.png";
+import clothing from "../Assets/clothing-img.png";
+import jewelry from "../Assets/jewelery-img.png";
+import decor from "../Assets/decor-img.png";
+import incense from "../Assets/incense.png";
 
 const Shop = () => {
   return (
@@ -52,17 +54,17 @@ const Shop = () => {
       <div className="bottom-shop-content">
         <div className="collection-content">
           <div className="collection-item bottom-item1">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/decor">
             <div className="collection-item-img">
-              <img src={crystals} alt="crystals" width="300px" height="350px" />
+              <img src={decor} alt="crystals" width="300px" height="350px" />
             </div>
             <p className="collection-item-text">Decor</p>
             </Link>
           </div>
           <div className="collection-item bottom-item2">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/incense">
             <div className="collection-item-img">
-              <img src={crystals} alt="crystals" width="300px" height="350px" />
+              <img src={incense} alt="crystals" width="300px" height="350px" />
             </div>
             <p className="collection-item-text">Incense</p>
             </Link>

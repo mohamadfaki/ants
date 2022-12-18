@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'ooo';
+  src: local(ooo), url(../fonts/SvargaTypefacePERSONALUSEONLY-Regular.otf) format('opentype');
+}
+
 .home-text {
   position: absolute;
   top: 55%;
@@ -6,8 +11,12 @@
   /* text-align: center; */
   color: white;
   font-size: 6rem;
-  font-family: "Roboto", sans-serif;
+  font-family: ooo !important;
   font-weight: 300;
+}
+
+.home-text p {
+  font-family: ooo !important;
 }
 
 .header-content {
@@ -44,13 +53,14 @@
   margin-top: -4%;
   /* filter: grayscale(100%); */
   z-index: -1;
-  background-blend-mode: multiply;
 }
 
-/* .home-img img {
-  background-color: #8D63AA;
+.home-image-filter {
+}
+
+.home-img img {
   background-blend-mode: multiply;
-} */
+}
 
 .text-top {
   position: absolute;
@@ -119,6 +129,7 @@
   flex-direction: column;
   width: 25%;
   margin-left: 10%;
+  font-family: ooo !important;
 }
 
 .collection-line {
@@ -138,6 +149,18 @@
   align-items: center;
   margin-top: 2%;
   margin-bottom: 2%;
+  margin-right: 10%;
+  margin-left: 10%;
+  /* width: 100%; */
+}
+
+.bar{
+  display: flex;
+  overflow-x: scroll;
+}
+
+.bar::-webkit-scrollbar {
+  display: none;
 }
 
 .collection-item-text {
@@ -157,8 +180,8 @@
 }
 
 .collection-item {
-  margin-left: 10%;
-  margin-right: 10%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .collection-item-img {
@@ -194,11 +217,12 @@
   flex-direction: column;
   width: 25%;
   margin-left: 10%;
+  font-family: ooo;
 }
 
 .shop-line {
   position: absolute;
-  top: 170%;
+  top: 169%;
   left: 60%;
   transform: translate(-50%, -50%);
   width: 60%;
@@ -251,14 +275,15 @@
   flex-direction: column;
   width: 25%;
   margin-left: 10%;
+  font-family: ooo;
 }
 
 .best-seller-line {
   position: absolute;
-  top: 228.5%;
+  top: 227.5%;
   left: 60%;
   transform: translate(-50%, -50%);
-  width: 60%;
+  width: 58%;
   height: 2px;
   background-color: #000;
 }
@@ -333,11 +358,12 @@
   flex-direction: column;
   width: 100%;
   margin-left: 10%;
+  font-family: ooo;
 }
 
 .heal-section-line {
   position: absolute;
-  top: 303.5%;
+  top: 302.7%;
   left: 68%;
   transform: translate(-50%, -50%);
   width: 45%;
@@ -393,6 +419,7 @@
   margin-top: 4%;
   margin-bottom: 2%;
   width: 100%;
+  font-family: ooo;
 }
 
 .story-text {
@@ -400,11 +427,12 @@
   flex-direction: column;
   width: 25%;
   margin-left: 10%;
+  font-family: ooo;
 }
 
 .story-line {
   position: absolute;
-  top: 381.5%;
+  top: 381%;
   left: 58%;
   transform: translate(-50%, -50%);
   width: 65%;

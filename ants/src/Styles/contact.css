@@ -1,9 +1,15 @@
+@font-face {
+  font-family: 'ooo';
+  src: local(ooo), url(../src/fonts/SvargaTypefacePERSONALUSEONLY-Regular.otf) format('opentype');
+}
+
 .contact-text {
   display: flex;
   flex-direction: column;
   width: 25%;
   margin-left: 10%;
   margin-top: 1%;
+  font-family: ooo;
 }
 
 .contact-line {

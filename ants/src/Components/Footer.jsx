@@ -38,7 +38,7 @@ const Footer = () => {
           </Col>
           <Col>
             <div className="footer-get-in-touch">
-              <p>Get in Touch</p>
+              <p>GET IN TOUCH</p>
               <div className="footer-contact">
                 <img src={phone} alt="phone" width="50px" height="50px"/>
                 <img src={email} alt="email" width="50px" height="50px"/>

@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import crystals from "../Assets/crystals.png";
 import clothing from "../Assets/clothing.png";
 import jewelry from "../Assets/jewelry.png";
-import necklaces from "../Assets/necklaces.png";
-import bracelets from "../Assets/bracelets.png";
+import necklaces from "../Assets/necklaces-img.png";
+import bracelets from "../Assets/bracelets-img.png";
+import rings from "../Assets/rings-img.png";
+import earrings from "../Assets/earrings-img.png";
 
 const Jewelry = () => {
   return (
@@ -25,10 +27,10 @@ const Jewelry = () => {
       <div className="top-shop-content">
         <div className="collection-content">
           <div className="collection-item bottom-item1">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/jewelery/rings">
               <div className="collection-item-img">
                 <img
-                  src={crystals}
+                  src={rings}
                   alt="crystals"
                   width="300px"
                   height="350px"
@@ -38,9 +40,9 @@ const Jewelry = () => {
             </Link>
           </div>
           <div className="collection-item bottom-item2">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/jewelery/earings">
               <div className="collection-item-img">
-                <img src={clothing} alt="jewelry" width="300px" height="350px" />
+                <img src={earrings} alt="jewelry" width="300px" height="350px" />
               </div>
               <p className="collection-item-text">Earrings</p>
             </Link>
@@ -50,7 +52,7 @@ const Jewelry = () => {
       <div className="bottom-shop-content">
         <div className="collection-content">
           <div className="collection-item bottom-item1">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/jewelery/necklaces">
               <div className="collection-item-img">
                 <img
                   src={necklaces}
@@ -63,7 +65,7 @@ const Jewelry = () => {
             </Link>
           </div>
           <div className="collection-item bottom-item2">
-            <Link style={{textDecoration: 'none'}} to="/shop/crystals">
+            <Link style={{textDecoration: 'none'}} to="/shop/jewelery/bracelets">
               <div className="collection-item-img">
                 <img
                   src={bracelets}

@@ -5,6 +5,10 @@ import img from '../Assets/SignUp.png';
 import Facebook from '../Assets/Group 85.png';
 import Instagram from '../Assets/Instagram.png';
 const Section = styled.div`
+@font-face {
+  font-family: 'ooo';
+  src: local(ooo), url(../fonts/SvargaTypefacePERSONALUSEONLY-Regular.otf) format('opentype');
+}
   padding-bottom: 5%;
   font-family: 'Montserrat', sans-serif;
 
@@ -35,6 +39,7 @@ const Title = styled.div`
   h1 {
     margin-left: 9%;
     color: #000;
+    font-family: 'ooo';
   }
 `;
 const Left = styled.div`
